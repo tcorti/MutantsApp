@@ -20,7 +20,7 @@ Nota: Se recomienda usar el IDE Visual Studio 2019 para mayor facilidad al compi
 
 - API: Ejecutando el proyecto “Mutants” se puede navegar desde el browser a la URL https://localhost:5001/swagger (siendo 5001 el default port), desde donde se puede probar la API localmente usando swagger (Testear el endpoint de Stats requiere crear una DB local para que funcione)
 
-- DB: Para testear usando una DB local, crear una base de datos en SQL Server llamada “Mutants” y luego correr en la misma el Script “CreateDnaTable.sql” que se encuentra en la carpeta Scripts del proyecto Mutants, para crear la tabla necesaria.
+- DB: Para testear usando una DB local, crear una base de datos en SQL Server llamada “Mutants” y luego correr en la misma el Script “CreateDnaTable.sql” que se encuentra en la carpeta Scripts del proyecto Mutants, para crear la tabla necesaria. Finalmente, reemplazar la ConnectionString "Connection" en appsettings.json por la adecuada a la base creada.
 
 <h5><b>Api publica</b></h3>
 
