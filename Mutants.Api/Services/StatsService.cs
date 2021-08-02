@@ -19,7 +19,7 @@ namespace Mutants.Services
 
         public virtual StatsResponse GetStats()
         {
-            var humanCount = _appDbContext.Dna.Count(x => x.IsMutant == false);
+            var humanCount = _appDbContext.Dna.Count();
             var mutantCount = _appDbContext.Dna.Count(x => x.IsMutant == true);
             var ratio = (humanCount != 0 && mutantCount != 0) ? decimal.Divide(mutantCount, humanCount) : 0;
             ratio = decimal.Round(ratio, 2, MidpointRounding.AwayFromZero);

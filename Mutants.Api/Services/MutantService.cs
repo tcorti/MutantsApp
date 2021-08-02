@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
@@ -21,6 +22,10 @@ namespace Mutants.Services
 
         public virtual async Task<bool> IsMutantAsync(IsMutantRequest rq)
         {
+
+            if (!ValidateRequest(rq))
+                return false;
+
             var length = rq.dna.Length;
             var mutantSeqcount = 0;
             char[][] dnaMap = rq.dna.Select(item => item.ToArray()).ToArray();
@@ -56,6 +61,15 @@ namespace Mutants.Services
             }
 
             return await RegisterDnaInDbAsync(rq.dna, false);
+        }
+
+        private static bool ValidateRequest(IsMutantRequest rq)
+        {
+            var validChars = new List<char> {'C','G','T','A' };
+            var invalidChar = rq.dna.FirstOrDefault(x => x.ToArray().Any(c => !validChars.Contains(c)));
+            if (invalidChar != null) return false;
+
+            return true;
         }
 
         private static char[] GetDiagonal(char[][] dnaMap, int i, int n, int direction)
