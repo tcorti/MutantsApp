@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutants", "Mutants.Api\Mutants.csproj", "{0B4877B2-E80B-4525-82BC-94427B51C10F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutants.UnitTests", "Mutants.UnitTests\Mutants.UnitTests.csproj", "{7E100F91-4636-4430-B167-EE40414CAE60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B4877B2-E80B-4525-82BC-94427B51C10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4877B2-E80B-4525-82BC-94427B51C10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4877B2-E80B-4525-82BC-94427B51C10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4877B2-E80B-4525-82BC-94427B51C10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E100F91-4636-4430-B167-EE40414CAE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E100F91-4636-4430-B167-EE40414CAE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E100F91-4636-4430-B167-EE40414CAE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E100F91-4636-4430-B167-EE40414CAE60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18C8DD49-10F9-4E2E-8323-B802FFB8C8E1}
+	EndGlobalSection
+EndGlobal
